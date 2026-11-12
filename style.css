@@ -253,7 +253,7 @@ li { margin-bottom: 6px; }
 
 .pub {
   display: block;
-  padding: 14px 0;
+  padding: 10px 0;
   border-bottom: 1px dashed var(--line);
 }
 .pub:last-child { border-bottom: none; }
@@ -261,10 +261,10 @@ li { margin-bottom: 6px; }
 
 .pub-title { font-family: var(--serif); font-weight: 600; font-size: 1.06rem; color: var(--heading); line-height: 1.4; }
 .pub-title:hover { color: var(--link); }
-.pub-authors { margin: 4px 0 2px; font-size: .92rem; }
-.pub-venue { margin: 0; color: var(--muted); font-style: italic; font-size: .88rem; }
+.pub-authors { margin: 3px 0 1px; font-size: .92rem; }
+.pub-venue { display: inline; margin: 0; color: var(--muted); font-style: italic; font-size: .88rem; }
 
-.pub-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.pub-links { display: inline-flex; gap: 6px; margin-left: 8px; vertical-align: 1px; }
 .pub-links a, a.pill {
   display: inline-block;
   font-size: .8rem;
