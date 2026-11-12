@@ -7,6 +7,7 @@
   --line: #c9d6e3;
   --accent: #6e5fb0;
   --link: #584a96;
+  --subheading: #716b7b;
   --accent-soft: #ebe7f5;
   --sidebar-bg: #f3f1f8;
   --sidebar-line: #e2dff0;
@@ -28,6 +29,7 @@
     --line: #2a333f;
     --accent: #a79ce0;
     --link: #b3a9e6;
+    --subheading: #b3adbd;
     --accent-soft: #2f2a44;
     --sidebar-bg: #1f1d2a;
     --sidebar-line: #302c40;
@@ -168,7 +170,7 @@ h3 {
   font-weight: 600;
   letter-spacing: .01em;
   margin: 18px 0 6px;
-  color: var(--link);
+  color: var(--subheading);
 }
 
 h2 + h3 { margin-top: 0; }
