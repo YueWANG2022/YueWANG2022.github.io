@@ -363,7 +363,8 @@ li { margin-bottom: 6px; }
 
 .pub-links { display: inline-flex; gap: 6px; margin-left: 8px; vertical-align: 1px; }
 /* 不可点击的小标签：同样大小轮廓，灰色描边 */
-.pub-links .tag {
+.pub-links .tag,
+.news .tag {
   display: inline-block;
   font-size: 12px;
   line-height: 1.5;
@@ -385,6 +386,20 @@ li { margin-bottom: 6px; }
 }
 .pub-links a:hover, a.pill:hover { background: var(--accent); color: #fff; }
 a.pill { margin-left: 2px; }
+.news .tag {
+  margin-left: 2px;
+  vertical-align: middle;
+}
+.news .tag,
+.pub-links .project-tag {
+  background: #6b6b6b;
+  border-color: #4a4a4a;
+  color: #fff;
+  font-weight: 700;
+}
+
+a.project-tag:hover { background: #555; border-color: #4a4a4a; color: #fff; }
+a.project-tag:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
 
 /* ===== 悬停高亮：正文每一条 ===== */
 .news li,
