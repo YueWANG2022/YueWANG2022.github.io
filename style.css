@@ -295,6 +295,7 @@ li { margin-bottom: 6px; }
 .pubs:last-of-type { border-bottom: none; }
 
 .pub {
+  scroll-margin-top: 24px;
   display: block;
   padding: 10px 0;
   border-bottom: none;
