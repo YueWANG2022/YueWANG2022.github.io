@@ -51,7 +51,7 @@ body {
   color: var(--text);
   font-family: var(--font);
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -63,7 +63,7 @@ a {
 }
 a:hover { border-bottom-color: var(--link); }
 
-h1, h2, h3 { line-height: 1.25; margin: 0; }
+h1, h2, h3 { line-height: 1; margin: 0; }
 
 /* ===== 页面布局：左栏固定，右栏滚动 ===== */
 .page {
@@ -169,7 +169,7 @@ h3 {
   font-family: var(--font);
   font-size: 16px;
   font-weight: 600;
-  line-height: 1.7;
+  line-height: 1.5;
   letter-spacing: normal;
   margin: 18px 0 6px;
   color: var(--subheading);
@@ -198,17 +198,17 @@ li { margin-bottom: 6px; }
   padding-top: 2px;
 }
 
-/* 研究兴趣与 Affiliations：14px，紧凑单栏列表 */
+/* 研究兴趣与 Affiliations：16px，紧凑单栏列表 */
 #about > .interests,
 #about > .affiliations {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 #about > .interests > li,
 #about > .affiliations > li {
   margin-bottom: 0;
   padding: 1px 8px;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 /* Teaching / Services 分组之间的虚线 */
@@ -312,7 +312,7 @@ li { margin-bottom: 6px; }
 .pub:last-child { border-bottom: none; }
 
 
-.pub-title { font-family: var(--serif); font-weight: 600; font-size: 16px; color: var(--heading); line-height: 1.4; }
+.pub-title { font-family: var(--serif); font-weight: 600; font-size: 16px; color: var(--heading); line-height: 1.5; }
 .pub-title:hover { color: var(--link); }
 .pub-authors { margin: 3px 0 1px; font-size: 14px; }
 .pub-venue { display: inline; margin: 0; color: var(--muted); font-style: italic; font-size: 14px; }
@@ -322,7 +322,7 @@ li { margin-bottom: 6px; }
 .pub-links .tag {
   display: inline-block;
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 1.5;
   padding: 3px 10px;
   border: 1px solid var(--muted);
   border-radius: 999px;
@@ -332,7 +332,7 @@ li { margin-bottom: 6px; }
 .pub-links a, a.pill {
   display: inline-block;
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 1.5;
   padding: 3px 10px;
   border: 1px solid var(--link);
   border-radius: 999px;
