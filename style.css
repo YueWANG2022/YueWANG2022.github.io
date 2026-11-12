@@ -164,10 +164,10 @@ h2 i {
 }
 
 h3 {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: .01em;
-  margin: 26px 0 10px;
+  margin: 18px 0 6px;
   color: var(--link);
 }
 
@@ -198,10 +198,10 @@ li { margin-bottom: 6px; }
 .interests { margin-bottom: 0; }
 .interests li { margin-bottom: 0; padding: 1px 8px; line-height: 1.55; }
 
-/* Teaching / Services 分组之间的实线 */
+/* Teaching / Services 分组之间的虚线 */
 #teaching > ul, #services > ul {
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--group-line);
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--group-line);
 }
 #teaching > ul:last-of-type, #services > ul:last-of-type { border-bottom: none; }
 
@@ -286,21 +286,21 @@ li { margin-bottom: 6px; }
   list-style: none;
   padding: 0 0 6px;
   margin: 0;
-  border-bottom: 1px solid var(--group-line);
+  border-bottom: 1px dashed var(--group-line);
 }
 .pubs:last-of-type { border-bottom: none; }
 
 .pub {
   display: block;
   padding: 10px 0;
-  border-bottom: 1px dashed var(--line);
+  border-bottom: none;
 }
 .pub:last-child { border-bottom: none; }
 
 
 .pub-title { font-family: var(--serif); font-weight: 600; font-size: 1.06rem; color: var(--heading); line-height: 1.4; }
 .pub-title:hover { color: var(--link); }
-.pub-authors { margin: 3px 0 1px; font-size: .92rem; }
+.pub-authors { margin: 3px 0 1px; font-size: .88rem; }
 .pub-venue { display: inline; margin: 0; color: var(--muted); font-style: italic; font-size: .88rem; }
 
 .pub-links { display: inline-flex; gap: 6px; margin-left: 8px; vertical-align: 1px; }
@@ -351,6 +351,18 @@ a.pill { margin-left: 2px; }
 .pub:hover,
 .content section > ul > li:hover {
   background: var(--hover);
+}
+
+/* Teaching：保留单栏，压缩组间和课程之间的留白 */
+#teaching > h3 { margin: 14px 0 5px; }
+#teaching > h2 + h3 { margin-top: 0; }
+#teaching > ul { margin-bottom: 0; }
+#teaching > ul > li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 0;
+  line-height: 1.5;
+  border-bottom: none;
 }
 
 /* ===== Contact 弹窗 ===== */
