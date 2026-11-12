@@ -202,12 +202,11 @@ li { margin-bottom: 6px; }
 }
 
 /* About / Teaching / Services 分组之间的虚线 */
-#about > .interests, #about > .affiliations,
+#about > .interests,
 #teaching > ul, #services > ul {
   padding-bottom: 12px;
   border-bottom: 1px dashed var(--group-line);
 }
-#about > ul:last-of-type,
 #teaching > ul:last-of-type, #services > ul:last-of-type { border-bottom: none; }
 
 /* ===== News 时间轴 ===== */
@@ -364,9 +363,8 @@ a.pill { margin-left: 2px; }
 #about > h3,
 #teaching > h3 { margin: 16px 0 10px; }
 #teaching > h2 + h3 { margin-top: 0; }
-/* About 的两组列表与 Teaching 课程列表共用条目样式 */
+/* Research Interests 与 Teaching 共用列表样式 */
 #about > .interests,
-#about > .affiliations,
 #teaching > ul {
   font-size: 16px;
   margin-bottom: 0;
@@ -374,7 +372,6 @@ a.pill { margin-left: 2px; }
   list-style-type: disc;
 }
 #about > .interests > li,
-#about > .affiliations > li,
 #teaching > ul > li {
   padding: 1px 8px;
   margin-left: -8px;
@@ -382,6 +379,26 @@ a.pill { margin-left: 2px; }
   line-height: 1.5;
   border-bottom: none;
 }
+
+/* Affiliations：可换行的链接标签 */
+.affiliations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 12px;
+}
+.affiliations a {
+  max-width: 100%;
+  padding: 6px 12px;
+  border: 1px solid var(--link);
+  border-radius: 999px;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  transition: background-color .15s;
+}
+.affiliations a:hover { background: var(--accent-soft); }
+.affiliations a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
 
 /* ===== Contact 弹窗 ===== */
 .contact-dialog {
