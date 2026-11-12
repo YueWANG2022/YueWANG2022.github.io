@@ -265,6 +265,17 @@ li { margin-bottom: 6px; }
 .pub-venue { display: inline; margin: 0; color: var(--muted); font-style: italic; font-size: .88rem; }
 
 .pub-links { display: inline-flex; gap: 6px; margin-left: 8px; vertical-align: 1px; }
+/* 不可点击的小标签：同样大小轮廓，灰色描边 */
+.pub-links .tag {
+  display: inline-block;
+  font-size: .8rem;
+  line-height: 1.4;
+  padding: 3px 10px;
+  border: 1px solid var(--muted);
+  border-radius: 999px;
+  color: var(--muted);
+  font-style: normal;
+}
 .pub-links a, a.pill {
   display: inline-block;
   font-size: .8rem;
