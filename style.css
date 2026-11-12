@@ -11,6 +11,7 @@
   --sidebar-bg: #f3f1f8;
   --sidebar-line: #e2dff0;
   --hover: #f0f0ee;
+  --group-line: #cfc8e6;
   --badge: #3b4a6b;
   --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "PingFang SC", "Noto Sans SC", sans-serif;
   --serif: "Cambria", "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -30,6 +31,7 @@
     --sidebar-bg: #1f1d2a;
     --sidebar-line: #302c40;
     --hover: #262a30;
+    --group-line: #4a4468;
     --heading: #e8ecf3;
     --badge: #7f93bd;
   }
@@ -160,12 +162,12 @@ h2 i {
 }
 
 h3 {
-  font-size: .8rem;
-  font-weight: 600;
+  font-size: .82rem;
+  font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
-  margin: 22px 0 8px;
-  color: var(--muted);
+  margin: 26px 0 10px;
+  color: var(--link);
 }
 
 h2 + h3 { margin-top: 0; }
@@ -190,6 +192,13 @@ li { margin-bottom: 6px; }
   font-variant-numeric: tabular-nums;
   padding-top: 2px;
 }
+
+/* Teaching / Services 分组之间的实线 */
+#teaching > ul, #services > ul {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--group-line);
+}
+#teaching > ul:last-of-type, #services > ul:last-of-type { border-bottom: none; }
 
 /* ===== News 时间轴 ===== */
 .timeline li {
@@ -235,13 +244,20 @@ li { margin-bottom: 6px; }
 .timeline li:hover::after { box-shadow: 0 0 0 3px var(--hover); }
 
 /* ===== Publications ===== */
-.pubs { list-style: none; padding: 0; margin: 0 0 8px; }
+.pubs {
+  list-style: none;
+  padding: 0 0 6px;
+  margin: 0;
+  border-bottom: 1px solid var(--group-line);
+}
+.pubs:last-of-type { border-bottom: none; }
 
 .pub {
   display: block;
   padding: 14px 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px dashed var(--line);
 }
+.pub:last-child { border-bottom: none; }
 
 
 .pub-title { font-family: var(--serif); font-weight: 600; font-size: 1.06rem; color: var(--heading); line-height: 1.4; }
