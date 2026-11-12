@@ -243,8 +243,9 @@ li { margin-bottom: 6px; }
   border-bottom: 1px solid var(--line);
 }
 
-.pub-thumb { position: relative; }
+.pub-thumb { position: relative; align-self: start; line-height: 0; }
 .pub-thumb img {
+  display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
