@@ -547,6 +547,11 @@ footer {
   .timeline li { grid-template-columns: 24px 1fr; padding-left: 10px; }
   .timeline .date { grid-column: 2; padding-top: 0; }
   .timeline li > span:last-child { grid-column: 2; }
-  .timeline li::before { left: 12px; }
-  .timeline li::after { left: 8px; top: 4px; }
+  /* 手机端日期与正文占两行，时间轴直接相对整条 li 定位。 */
+  .timeline li::before,
+  .timeline li::after { grid-area: auto; }
+  .timeline li::before { left: 22px; top: 0; bottom: 0; }
+  .timeline li:first-child::before { top: 20px; }
+  .timeline li:last-child::before { bottom: calc(100% - 20px); }
+  .timeline li::after { left: 18px; top: 16px; }
 }
