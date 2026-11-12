@@ -112,6 +112,18 @@ h1, h2, h3 { line-height: 1; margin: 0; }
 }
 .contact-btn:hover { background: #5d4f9a; color: #fff; border: none; }
 .contact-btn i { margin-right: 4px; }
+/* 左栏 Contact：描边白底，保持 33px 高度 */
+#contact-btn {
+  padding: 5px 16px;
+  line-height: 1.5;
+  background: var(--surface);
+  color: var(--link);
+  border: 1px solid var(--link);
+  transition: background-color .15s;
+}
+#contact-btn:hover { background: var(--accent-soft); }
+#contact-btn:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+
 
 .social {
   list-style: none;
