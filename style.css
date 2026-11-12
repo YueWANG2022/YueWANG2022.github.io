@@ -201,11 +201,13 @@ li { margin-bottom: 6px; }
   padding-top: 2px;
 }
 
-/* Teaching / Services 分组之间的虚线 */
+/* About / Teaching / Services 分组之间的虚线 */
+#about > .interests, #about > .affiliations,
 #teaching > ul, #services > ul {
   padding-bottom: 12px;
   border-bottom: 1px dashed var(--group-line);
 }
+#about > ul:last-of-type,
 #teaching > ul:last-of-type, #services > ul:last-of-type { border-bottom: none; }
 
 /* ===== News 时间轴 ===== */
@@ -358,7 +360,8 @@ a.pill { margin-left: 2px; }
   background: var(--hover);
 }
 
-/* Teaching：保留单栏，压缩组间和课程之间的留白 */
+/* About 与 Teaching 统一小标题及分组间距 */
+#about > h3,
 #teaching > h3 { margin: 16px 0 10px; }
 #teaching > h2 + h3 { margin-top: 0; }
 /* About 的两组列表与 Teaching 课程列表共用条目样式 */
