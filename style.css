@@ -268,9 +268,21 @@ li { margin-bottom: 6px; }
 .pub-title { font-family: var(--serif); font-weight: 600; font-size: 1.06rem; color: var(--heading); line-height: 1.4; }
 .pub-title:hover { color: var(--link); }
 .pub-authors { margin: 4px 0 2px; font-size: .92rem; }
-.pub-venue { margin: 0 0 8px; color: var(--muted); font-style: italic; font-size: .88rem; }
+.pub-venue { margin: 0; color: var(--muted); font-style: italic; font-size: .88rem; }
 
-.pub-links { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.pub-links {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  display: flex;
+  gap: 6px;
+}
+.pub-links a {
+  background: var(--surface);
+  box-shadow: 0 1px 3px rgba(0,0,0,.12);
+  font-size: .72rem;
+  padding: 2px 8px;
+}
 .pub-links a, a.pill {
   display: inline-block;
   font-size: .8rem;
@@ -283,7 +295,6 @@ li { margin-bottom: 6px; }
 }
 .pub-links a:hover, a.pill:hover { background: var(--accent); color: #fff; }
 a.pill { margin-left: 2px; }
-.pub-links .oa { font-size: .8rem; color: var(--badge); font-weight: 600; }
 
 /* ===== 悬停高亮：正文每一条 ===== */
 .news li,
