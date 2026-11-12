@@ -398,8 +398,26 @@ a.pill { margin-left: 2px; }
   font-weight: 700;
 }
 
-a.project-tag:hover { background: #555; border-color: #4a4a4a; color: #fff; }
+.news a.project-tag,
+.pub-links a.project-tag {
+  background: var(--accent);
+  border: none;
+  padding: 4px 11px;
+  color: #fff;
+}
+.news a.project-tag:hover,
+.pub-links a.project-tag:hover { background: var(--link); color: #fff; }
 a.project-tag:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+
+.pub-links a.dissertation-tag {
+  background: #6b6b6b;
+  border: none;
+  padding: 4px 11px;
+  color: #fff;
+  font-weight: 700;
+}
+.pub-links a.dissertation-tag:hover { background: #555; color: #fff; }
+a.dissertation-tag:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
 
 /* ===== 悬停高亮：正文每一条 ===== */
 .news li,
