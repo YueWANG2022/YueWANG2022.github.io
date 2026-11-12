@@ -179,6 +179,9 @@ h2 + h3 { margin-top: 0; }
 
 p { margin: 0 0 16px; }
 
+/* About 自我介绍采用更舒展的段落行距 */
+#about > p { line-height: 2; }
+
 ul, ol { padding-left: 22px; margin: 0 0 16px; }
 li { margin-bottom: 6px; }
 
