@@ -253,18 +253,6 @@ li { margin-bottom: 6px; }
   border: 1px solid var(--line);
   background: var(--surface);
 }
-.badge {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: var(--badge);
-  color: #fff;
-  font-size: .66rem;
-  font-weight: 600;
-  letter-spacing: .06em;
-  padding: 3px 7px;
-  border-radius: 4px;
-}
 
 .pub-title { font-family: var(--serif); font-weight: 600; font-size: 1.06rem; color: var(--heading); line-height: 1.4; }
 .pub-title:hover { color: var(--link); }
