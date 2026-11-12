@@ -125,7 +125,7 @@ h1, h2, h3 { line-height: 1; margin: 0; }
   width: fit-content;
   max-width: 100%;
   border-radius: 999px;
-  background: #9690aa;
+  background: var(--accent);
   font-size: 16px;
 }
 .social li { margin: 0; }
@@ -141,7 +141,7 @@ h1, h2, h3 { line-height: 1; margin: 0; }
   border: none;
   transition: background-color .15s;
 }
-.social a:hover { background: #7e768f; color: #fff; }
+.social a:hover { background: #5d4f9a; color: #fff; }
 .social a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
 
 .toc {
