@@ -8,8 +8,8 @@
   --accent: #6e5fb0;
   --link: #584a96;
   --accent-soft: #ebe7f5;
-  --sidebar-bg: #eef3f8;
-  --sidebar-line: #dbe4ee;
+  --sidebar-bg: #f3f1f8;
+  --sidebar-line: #e2dff0;
   --hover: #f0f0ee;
   --badge: #3b4a6b;
   --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "PingFang SC", "Noto Sans SC", sans-serif;
@@ -27,8 +27,8 @@
     --accent: #a79ce0;
     --link: #b3a9e6;
     --accent-soft: #2f2a44;
-    --sidebar-bg: #1b2129;
-    --sidebar-line: #2a333f;
+    --sidebar-bg: #1f1d2a;
+    --sidebar-line: #302c40;
     --hover: #262a30;
     --heading: #e8ecf3;
     --badge: #7f93bd;
