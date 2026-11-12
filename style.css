@@ -50,7 +50,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font);
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -97,7 +97,7 @@ h1, h2, h3 { line-height: 1; margin: 0; }
 }
 
 .name { font-family: var(--serif); font-size: 25px; margin-top: 10px; font-weight: 600; color: var(--heading); letter-spacing: -.01em; }
-.role { margin: 10px 0 0; font-size: 16px; }
+.role { margin: 10px 0 0; font-size: 15px; }
 .affiliation { margin: 2px 0 0; }
 .contact-btn {
   display: inline-block;
@@ -138,7 +138,7 @@ h1, h2, h3 { line-height: 1; margin: 0; }
   max-width: 100%;
   border-radius: 999px;
   background: var(--accent);
-  font-size: 16px;
+  font-size: 15px;
 }
 .social li { margin: 0; }
 .social a {
@@ -173,7 +173,7 @@ h1, h2, h3 { line-height: 1; margin: 0; }
   border-radius: 6px;
   color: var(--muted);
   border: none;
-  font-size: 16px;
+  font-size: 15px;
 }
 .toc a i {
   width: 18px;
@@ -208,7 +208,7 @@ h2 i {
 
 h3 {
   font-family: var(--font);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: normal;
@@ -356,7 +356,7 @@ li { margin-bottom: 6px; }
 .pub + .pub { margin-top: 12px; }
 
 
-.pub-title { font-family: var(--serif); font-weight: 600; font-size: 16px; color: var(--heading); line-height: 1.5; }
+.pub-title { font-family: var(--serif); font-weight: 600; font-size: 15px; color: var(--heading); line-height: 1.5; }
 .pub-title:hover { color: var(--link); }
 .pub-authors { margin: 3px 0 1px; font-size: 14px; }
 .pub-venue { display: inline; margin: 0; color: var(--muted); font-style: italic; font-size: 14px; }
@@ -456,7 +456,7 @@ a.dissertation-tag:focus-visible { outline: 2px solid var(--link); outline-offse
 #about > .interests,
 #teaching > ul,
 #services > ul {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 0;
   padding-left: 22px;
   list-style-type: disc;
@@ -539,7 +539,7 @@ a.dissertation-tag:focus-visible { outline: 2px solid var(--link); outline-offse
   background: var(--bg);
   color: var(--text);
   font: inherit;
-  font-size: 16px;
+  font-size: 15px;
   resize: vertical;
 }
 .contact-dialog input:focus,
@@ -591,7 +591,7 @@ footer {
 }
 
 /* Contact 发送确认：不改变按钮本身。 */
-.contact-success { margin-left: 6px; color: var(--link); font-size: 16px; font-weight: 700; }
+.contact-success { margin-left: 6px; color: var(--link); font-size: 15px; font-weight: 700; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 
 /* 深色模式为白字按钮保留足够深的紫色底。 */
