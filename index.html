@@ -69,7 +69,8 @@
 
     <section id="news">
       <h2><i class="fas fa-newspaper" aria-hidden="true"></i>News</h2>
-      <ul class="news timeline">
+      <div class="collapsible is-collapsed" id="news-collapsible">
+      <ul class="news timeline" id="news-list">
         <li><span class="date">Nov 2026</span><span><strong>Upcoming:</strong> I will give a talk at the <a href="https://www.lse.ac.uk/dsi/events/2025-26/research-events/phd-25-10-spotlight" target="_blank" rel="noopener">LSE Data Science Institute PhD Affiliates Research Spotlight</a> on LLM-assisted information extraction from event data and downstream spatial analysis.</span></li>
         <li><span class="date">Apr 2026</span><span><strong>Case study presentation</strong> at <a href="https://www.kcl.ac.uk/events/technical-workflows-for-ai-research-skills-challenges-and-future-developments" target="_blank" rel="noopener"><em>Technical Workflows for AI Research: Skills, Challenges and Future Developments</em></a>, a workshop organised by the <a href="https://www.kcl.ac.uk/ai" target="_blank" rel="noopener">King's Institute for Artificial Intelligence</a> and STEP-UP, King's College London.</span></li>
         <li><span class="date">Mar 2026</span><span>A paper on applying LLMs to a cultural event taxonomy has been accepted as an <strong>oral presentation</strong> at the <a href="https://2026.geoaiconference.org/" target="_blank" rel="noopener">1st International Conference on Geospatial Artificial Intelligence (GeoAI 2026)</a>. <a class="pill" href="https://doi.org/10.5281/zenodo.19137987" target="_blank" rel="noopener">DOI</a></span></li>
@@ -79,6 +80,10 @@
         <li><span class="date">Mar 2025</span><span><strong>Invited talk</strong> (online) at the <a href="https://www.city-plus.org/" target="_blank" rel="noopener">City+ 2025 Seminars</a>: "LLMs and AI Tools for Urban Studies".</span></li>
         <li><span class="date">May 2024</span><span><strong>Online talk</strong> at the <a href="https://www.cnbksy.com/meeting/meetingInfo/M_38103" target="_blank" rel="noopener">2024 Global Forum of Chinese Doctoral Students in Digital Humanities</a>: "Google Cloud Vision AI in Urban Perception of Historical Districts".</span></li>
       </ul>
+      </div>
+      <button type="button" class="expand-btn" id="news-toggle" aria-expanded="false" aria-controls="news-list" aria-label="Show more news" title="Show more">
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </button>
     </section>
 
     <section id="publications">
@@ -253,6 +258,36 @@
         sendBtn.disabled = false;
       }
     });
+  })();
+
+  // News 折叠：默认只展开前三条，其余淡出，点圆按钮展开/收起
+  (function () {
+    const VISIBLE = 3, PEEK = 34;
+    const wrap = document.getElementById('news-collapsible');
+    const list = document.getElementById('news-list');
+    const btn = document.getElementById('news-toggle');
+    const items = list.querySelectorAll('li');
+    if (items.length <= VISIBLE) { btn.remove(); wrap.classList.remove('is-collapsed'); return; }
+
+    function collapsedHeight() {
+      return items[VISIBLE].offsetTop - list.offsetTop + PEEK;
+    }
+    function apply() {
+      if (wrap.classList.contains('is-collapsed')) {
+        wrap.style.maxHeight = collapsedHeight() + 'px';
+      } else {
+        wrap.style.maxHeight = list.scrollHeight + 'px';
+      }
+    }
+    btn.addEventListener('click', function () {
+      const collapsed = wrap.classList.toggle('is-collapsed');
+      btn.setAttribute('aria-expanded', String(!collapsed));
+      btn.setAttribute('aria-label', collapsed ? 'Show more news' : 'Show fewer news');
+      btn.title = collapsed ? 'Show more' : 'Show less';
+      apply();
+    });
+    window.addEventListener('resize', apply);
+    apply();
   })();
 
   // 滚动时高亮左侧目录
