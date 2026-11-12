@@ -118,7 +118,7 @@ h1, h2, h3 { line-height: 1; margin: 0; }
   line-height: 1.5;
   background: rgb(255 255 255 / 50%);
   color: var(--link);
-  border: 1px solid rgb(255 255 255 / 50%);
+  border: 1px solid transparent;
   transition: background-color .15s;
 }
 #contact-btn:hover { background: var(--accent-soft); }
