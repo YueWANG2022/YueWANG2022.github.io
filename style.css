@@ -147,7 +147,7 @@ h1, h2, h3 { line-height: 1; margin: 0; }
 /* ===== 右侧正文 ===== */
 .content { min-width: 0; }
 
-section { margin-bottom: 56px; }
+section { margin-bottom: 36px; }
 
 h2 {
   font-family: var(--serif);
@@ -306,7 +306,7 @@ li { margin-bottom: 6px; }
 .pub {
   scroll-margin-top: 24px;
   display: block;
-  padding: 10px 0;
+  padding: 8px 0;
   border-bottom: none;
 }
 .pub:last-child { border-bottom: none; }
@@ -368,7 +368,7 @@ a.pill { margin-left: 2px; }
 }
 
 /* Teaching：保留单栏，压缩组间和课程之间的留白 */
-#teaching > h3 { margin: 14px 0 5px; }
+#teaching > h3 { margin: 14px 0 6px; }
 #teaching > h2 + h3 { margin-top: 0; }
 #teaching > ul { margin-bottom: 0; }
 #teaching > ul > li {
@@ -446,8 +446,8 @@ a.pill { margin-left: 2px; }
 
 /* ===== Footer ===== */
 footer {
-  margin-top: 40px;
-  padding-top: 16px;
+  margin-top: 36px;
+  padding-top: 14px;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 12px;
