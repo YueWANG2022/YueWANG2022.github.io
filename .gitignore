@@ -2,3 +2,5 @@
 inspiration.txt
 # macOS
 .DS_Store
+# 原始大图不上传，只上传压缩后的 avatar.jpg
+assets/img/myphoto.jpeg
