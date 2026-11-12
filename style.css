@@ -192,6 +192,10 @@ li { margin-bottom: 6px; }
   padding-top: 2px;
 }
 
+/* 研究兴趣：两栏、行距更紧 */
+.interests { columns: 2; column-gap: 32px; margin-bottom: 0; }
+.interests li { margin-bottom: 2px; break-inside: avoid; padding: 2px 8px; }
+
 /* Teaching / Services 分组之间的实线 */
 #teaching > ul, #services > ul {
   padding-bottom: 12px;
@@ -398,6 +402,7 @@ footer {
   .sidebar { position: static; }
   .avatar { width: 130px; height: 130px; }
   .toc { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+  .interests { columns: 1; }
   .news li { flex-direction: column; gap: 2px; }
   .news .date { flex: none; }
   .timeline li { grid-template-columns: 24px 1fr; padding-left: 10px; }
