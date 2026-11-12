@@ -115,12 +115,15 @@ h1, h2, h3 { line-height: 1; margin: 0; }
 
 .social {
   list-style: none;
-  padding: 0;
-  margin: 12px 0 0;
+  padding: 4px 8px;
+  margin: 12px auto 0;
   display: flex;
   justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  gap: 4px;
+  width: fit-content;
+  max-width: 100%;
+  border-radius: 999px;
+  background: var(--accent);
   font-size: 16px;
 }
 .social li { margin: 0; }
@@ -130,8 +133,8 @@ h1, h2, h3 { line-height: 1; margin: 0; }
   justify-content: center;
   width: 34px;
   height: 34px;
-  border-radius: 50%;
-  background: var(--accent);
+  border-radius: 999px;
+  background: transparent;
   color: #fff;
   border: none;
   transition: background-color .15s;
