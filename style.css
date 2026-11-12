@@ -183,7 +183,7 @@ p { margin: 0 0 16px; }
 #about > p { line-height: 2; }
 
 #about > p + h3 {
-  border-top: 1px dashed var(--group-line);
+  border-top: 0.5pt dashed var(--group-line);
   padding-top: 16px;
 }
 
@@ -196,7 +196,7 @@ li { margin-bottom: 6px; }
   display: flex;
   gap: 14px;
   padding: 8px 0;
-  border-bottom: 1px dashed var(--line);
+  border-bottom: 0.5pt dashed var(--line);
 }
 .news .date {
   flex: 0 0 84px;
@@ -210,7 +210,7 @@ li { margin-bottom: 6px; }
 #about > .interests,
 #teaching > ul, #services > ul {
   padding-bottom: 12px;
-  border-bottom: 1px dashed var(--group-line);
+  border-bottom: 0.5pt dashed var(--group-line);
 }
 #teaching > ul:last-of-type, #services > ul:last-of-type { border-bottom: none; }
 
@@ -240,7 +240,7 @@ li { margin-bottom: 6px; }
   left: calc(84px + 10px + 12px);
   top: -12px;
   bottom: -12px;
-  border-left: 1px dashed var(--line);
+  border-left: 0.5pt dashed var(--line);
 }
 .timeline li:first-child::before { top: 10px; }
 .timeline li:last-child::before { bottom: calc(100% - 10px); }
@@ -296,7 +296,7 @@ li { margin-bottom: 6px; }
   list-style: none;
   padding: 0 0 10px;
   margin: 0;
-  border-bottom: 1px dashed var(--group-line);
+  border-bottom: 0.5pt dashed var(--group-line);
 }
 .pubs:last-of-type { border-bottom: none; }
 
