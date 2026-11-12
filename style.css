@@ -224,7 +224,8 @@ li { margin-bottom: 6px; }
   grid-template-columns: 84px 24px 1fr;
   gap: 0 10px;
   align-items: start;
-  padding: 8px 10px 16px;
+  padding: 12px 10px;
+  margin-bottom: 0;
   border-bottom: none;
   position: relative;
 }
@@ -241,8 +242,8 @@ li { margin-bottom: 6px; }
   content: "";
   position: absolute;
   left: calc(84px + 10px + 12px);
-  top: -8px;
-  bottom: -16px;
+  top: -12px;
+  bottom: -12px;
   border-left: 1px dashed var(--line);
 }
 .timeline li:first-child::before { top: 10px; }
@@ -356,7 +357,7 @@ a.pill { margin-left: 2px; }
   margin-left: -10px;
   margin-right: -10px;
 }
-.content section > ul > li {
+.content section > ul:not(.timeline) > li {
   padding: 3px 8px;
   margin-left: -8px;
   margin-bottom: 2px;
