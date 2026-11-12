@@ -392,7 +392,7 @@ a.pill { margin-left: 2px; }
   padding: 6px 12px;
   border: 1px solid var(--link);
   border-radius: 999px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   overflow-wrap: anywhere;
   transition: background-color .15s;
