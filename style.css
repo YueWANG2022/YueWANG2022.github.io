@@ -497,7 +497,7 @@ footer {
     padding: 28px 16px;
   }
   .sidebar { position: static; }
-  .avatar { width: 130px; height: 130px; }
+  .avatar { width: 80px; height: 80px; }
   .toc { flex-direction: row; flex-wrap: wrap; justify-content: center; }
   .news li { flex-direction: column; gap: 2px; }
   .news .date { flex: none; }
