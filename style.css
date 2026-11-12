@@ -201,19 +201,6 @@ li { margin-bottom: 6px; }
   padding-top: 2px;
 }
 
-/* 研究兴趣与 Affiliations：16px，紧凑单栏列表 */
-#about > .interests,
-#about > .affiliations {
-  font-size: 16px;
-  margin-bottom: 0;
-}
-#about > .interests > li,
-#about > .affiliations > li {
-  margin-bottom: 0;
-  padding: 1px 8px;
-  line-height: 1.5;
-}
-
 /* Teaching / Services 分组之间的虚线 */
 #teaching > ul, #services > ul {
   padding-bottom: 12px;
@@ -374,10 +361,20 @@ a.pill { margin-left: 2px; }
 /* Teaching：保留单栏，压缩组间和课程之间的留白 */
 #teaching > h3 { margin: 16px 0 10px; }
 #teaching > h2 + h3 { margin-top: 0; }
-#teaching > ul { margin-bottom: 0; }
+/* About 的两组列表与 Teaching 课程列表共用条目样式 */
+#about > .interests,
+#about > .affiliations,
+#teaching > ul {
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-left: 22px;
+  list-style-type: disc;
+}
+#about > .interests > li,
+#about > .affiliations > li,
 #teaching > ul > li {
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding: 1px 8px;
+  margin-left: -8px;
   margin-bottom: 0;
   line-height: 1.5;
   border-bottom: none;
