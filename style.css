@@ -240,7 +240,7 @@ li { margin-bottom: 6px; }
   border-bottom: 0.5pt dashed var(--line);
 }
 .news .date {
-  flex: 0 0 84px;
+  flex: 0 0 100px;
   color: var(--muted);
   font-size: 14px;
   font-variant-numeric: tabular-nums;
@@ -258,7 +258,7 @@ li { margin-bottom: 6px; }
 /* ===== News 时间轴 ===== */
 .timeline li {
   display: grid;
-  grid-template-columns: 84px 24px 1fr;
+  grid-template-columns: 100px 24px 1fr;
   gap: 0 10px;
   align-items: start;
   padding: 8px 10px;
@@ -278,7 +278,7 @@ li { margin-bottom: 6px; }
 .timeline li::before {
   content: "";
   position: absolute;
-  left: calc(84px + 10px + 12px);
+  left: calc(100px + 10px + 12px);
   top: -8px;
   bottom: -8px;
   border-left: 0.5pt dashed var(--line);
@@ -289,7 +289,7 @@ li { margin-bottom: 6px; }
 .timeline li::after {
   content: "";
   position: absolute;
-  left: calc(84px + 10px + 12px - 4px);
+  left: calc(100px + 10px + 12px - 4px);
   top: 6px;
   width: 9px;
   height: 9px;
