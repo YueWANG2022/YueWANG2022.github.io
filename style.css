@@ -299,6 +299,7 @@ li { margin-bottom: 6px; }
 }
 .timeline li:hover::after { box-shadow: 0 0 0 3px var(--hover); }
 #news .timeline li::after,
+#education .timeline li::after,
 #experience .timeline li::after { background: color-mix(in srgb, var(--accent) 50%, transparent); }
 
 /* ===== News 折叠 ===== */
