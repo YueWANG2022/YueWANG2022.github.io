@@ -493,6 +493,8 @@ a.dissertation-tag:focus-visible { outline: 2px solid var(--link); outline-offse
 
 .timeline .affiliations { margin-top: 8px; padding-bottom: 2px; gap: 8px; }
 .timeline .affiliations a { padding: 5px 12px; font-size: 14px; }
+.affiliations.solid a { background: var(--accent); border-color: var(--accent); color: #fff; }
+.affiliations.solid a:hover { background: var(--link); border-color: var(--link); }
 
 /* ===== Contact 弹窗 ===== */
 .contact-dialog {
